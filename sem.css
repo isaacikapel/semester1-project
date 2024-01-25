@@ -1,0 +1,149 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'poppins', sans-serif;
+}
+body{
+  color: aliceblue;
+}
+.header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 10%;
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.logo{
+  position: relative;
+  font-size: 25px;
+  color: rgb(11, 11, 11);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.navbar li{
+  list-style: none;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+
+.navbar li::after{
+  content: '';
+  height: 3px;
+  width: 0%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: black;
+  transition: 0.5s;
+}
+
+
+.navbar li:hover::after{
+  width: 100%;
+}
+
+
+.navbar a{
+  display: inline-block;
+  font-size: 25px;
+  color: rgb(70, 68, 68);
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 35px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.navbar a:hover{
+  color: rgb(3, 3, 3);
+  font-weight: bolder;
+  
+}
+
+.home{
+  width: 100%;
+  height: 100vh;
+  justify-content: space-between;
+  position: relative;
+  /* I SHOULD PUT A WAVY WALLPER AS A HOME BACKGROUND LATER */
+  /* I.E..... background-color: url(Purple\Illustrated\Mountain\Desktop\Wallpaper.png) no-repeat */
+  color: black;
+  background-color: blanchedalmond;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  padding: 100px 10% 0;
+}
+
+.home-content1{
+  max-width: 600px;
+}
+
+.home-content1 h3{
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.home-content1 h1{
+  font-size: 56px;
+  font-weight: 700;
+  margin: -3px 0;
+}
+
+.home-content1 p{
+  font-size: 20px;
+
+}
+
+.home-content2 a{
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  border: 2px solid rgb(104, 190, 240);
+  border-radius: 50%;
+  font-size: 20px;
+  color: rgb(104, 190, 240);
+  text-decoration: none;
+  margin: 30px 15px 30px 0;
+}
+
+.home-content2 a:hover{
+  background: rgb(104, 190, 240);
+  color: rgb(27, 27, 27);
+  box-shadow: 0 0 20px rgb(104, 190, 240);
+}
+
+.btn-box{
+  display: inline-block;
+  padding: 12px 28px;
+  font-size: 16px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 40px;
+  background: rgb(27, 27, 27);
+  color: rgb(104, 190, 240);
+  box-shadow: 0 0 20px rgb(104, 190, 240);
+}
+
+.btn-box:hover{
+  background: rgb(27, 27, 27);
+  color: rgb(199, 90, 78);
+  box-shadow: 0 0 20px rgb(199, 90, 78);
+  text-decoration: underline;
+}
+
+
